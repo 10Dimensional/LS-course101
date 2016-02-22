@@ -1,0 +1,58 @@
+1. a method that returns the sum of two integers
+
+  START
+  
+    PRINT "What's the first number?"
+    SET num1 = GET first number from user input and store in variable
+    
+    PRINT "What's the second number?"
+    SET num2 = GET first number from user input and store in variable
+    
+    SET result = num1 + num2
+    
+    PRINT "The total is: " + result
+  
+  END
+  
+  
+2. a method that takes an array of strings, and returns a string that is all those strings concatenated together
+
+  START
+  
+    SET array = String of various words
+    SET iterator = 0
+    
+    WHILE iterator < length of array
+    
+      SET concat_string = Add word to string
+      
+      iterator = iterator + 1
+      
+      
+    PRINT concat_string
+    
+  END
+  
+
+3. a method that takes an array of integers, and returns a new array with every other element
+
+  START
+    
+    SET array = set of integers
+    SET iterator = 0
+    SET new_array = []
+    
+    WHILE iterator < length of array
+    
+      IF iterator is even
+        
+        iterator = iterator + 1
+      
+      ELSE iterator is odd 
+      
+        Push current integer onto new_array
+        
+    PRINT new_array
+    
+  END
+    
