@@ -1,0 +1,32 @@
+Question 1 -- Show an easier way to write this array:
+
+flinstones = ["Fred", "Barney", "Wilma", "Betty", "BamBam", "Pebbles"]
+
+flinstones = w%(Fred Barney Wilma Betty BamBam Pebbles)
+
+
+Question 2 -- How can we add the family pet "Dino" to our usual array:
+
+flinstones = w%(Fred Barney Wilma Betty BamBam Pebbles)
+
+flinstones << "Dino"
+
+
+Question 3 -- In the previous exercise we added Dino to our array like this:
+
+flinstones = w%(Fred Barney Wilma Betty BamBam Pebbles)
+flinstones << "Dino"
+
+We could have used either Array#concact or Array#push to add Dino to the family.
+
+How can we add multiple items to our array? (Dino and Hoppy)
+
+flinstones.push("Dino").push("Hoppy") # push returns the array so we can chain
+flinstones.concact(%W(Dino Hoppy)) # concat adds an array rather than one item
+
+
+Question 4 -- Shorten this sentence:
+
+advice = "Few things in life are as important as house training your pet dinosaur."
+
+
