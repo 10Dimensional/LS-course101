@@ -1,0 +1,48 @@
+1. Show an easier way to write this array:
+
+  flinstones = ["Fred", "Barney", "Wilma", "Betty", "BamBam", "Pebbles"]
+  
+  flinstones = %w(Fred Barney Wilma Betty BamBam Pebbles)
+  
+2. How can we add the famil pet "Dino" to our usual array:
+
+  flinstones = %w(Fred Barney Wilma Betty BamBam Pebbles)
+  
+  flinstones << "Dino"
+  
+3. In the previous exercise we added Dino to our array like this:
+
+  flinstones = %w(Fred Barney Wilma Betty BamBam Pebbles)
+  flinstones << "Dino"
+  
+  How can we add multiple items to our array? (Dino and Hoppy)
+  
+  flinstones.push("Dino").push("Hoppy")
+  flinstones.concat(%w(Dino Hoppy))
+  
+4. Shorten this sentence:
+
+  advice = "Few things in life are as important as house training your pet dinosaur."
+  
+  remove everything starting from "house"
+  
+  advice.slice!(0, advice.index('house'))
+  
+  As a bonus, what happens when you use the String#slice method instead?
+  
+  *the "advice" variable stays the same
+  
+5. Write a one-liner to count the number of lower-case 't' characters in the following string:
+
+  statement = "The Flinstones Rock!"
+  
+  statement.scan('t').count
+  
+6. Back in the stone age (before CSS) we used spaces to align things on the screen. If we had a 40 
+   character wide table of Flinstone family members, how could we easily center that title above the 
+   table with spaces?
+   
+   title = "Flinstones Family Members"
+   
+   title.center("10") # centers string with 10 spaces on either side of each string 
+   
